@@ -1,265 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NM Shopsy - Daily Needs Store</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureVision | 4K CCTV Sales & Installation</title>
+    
+    <style>
+        /* CSS STYLES */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; scroll-behavior: smooth; }
+        
+        :root {
+            --primary-dark: #001529;
+            --accent-blue: #00a8ff;
+            --whatsapp-green: #25D366;
+            --light-gray: #f4f4f4;
+        }
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#f5f7fa;color:#333;}
+        body { background-color: var(--light-gray); color: #333; line-height: 1.6; }
 
-/* HEADER */
-header{
-    background:white;
-    padding:15px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:0 4px 15px rgba(0,0,0,0.08);
-    position:sticky;
-    top:0;
-    z-index:1000;
-}
+        /* Navigation */
+        header { background: var(--primary-dark); color: white; padding: 1rem 5%; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.6rem; font-weight: bold; letter-spacing: 1px; }
+        .logo span { color: var(--accent-blue); }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        nav ul li a:hover { color: var(--accent-blue); }
 
-.logo-container img{
-    height:60px;
-}
+        /* Hero Section */
+        .hero { 
+            height: 70vh; 
+            background: linear-gradient(rgba(0,21,41,0.8), rgba(0,21,41,0.8)), url('https://images.unsplash.com/photo-1557597774-9d2739f85a76?auto=format&fit=crop&w=1200'); 
+            background-size: cover; 
+            background-position: center;
+            color: white; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+            padding: 20px; 
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 15px; text-transform: uppercase; }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin-bottom: 30px; }
+        .cta-btn { background: var(--accent-blue); color: white; padding: 15px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; transition: 0.3s; box-shadow: 0 4px 15px rgba(0,168,255,0.4); }
+        .cta-btn:hover { transform: scale(1.05); background: #0086cc; }
 
-.search-box input{
-    padding:8px 15px;
-    border-radius:20px;
-    border:1px solid #ddd;
-    width:250px;
-}
+        /* Container & Titles */
+        .container { max-width: 1200px; margin: auto; padding: 80px 20px; }
+        .section-title { text-align: center; margin-bottom: 50px; font-size: 2.2rem; position: relative; padding-bottom: 10px; }
+        .section-title::after { content: ''; width: 60px; height: 4px; background: var(--accent-blue); position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
 
-.cart-btn{
-    background:#2e7d32;
-    color:white;
-    padding:8px 15px;
-    border-radius:20px;
-    cursor:pointer;
-    font-weight:600;
-}
+        /* Camera Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 0; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .card img { width: 100%; height: 230px; object-fit: cover; }
+        .card-content { padding: 25px; }
+        .card h3 { margin-bottom: 10px; color: var(--primary-dark); }
 
-/* HERO */
-.hero{
-    background:linear-gradient(to right,#2e7d32,#66bb6a);
-    color:white;
-    padding:70px 8%;
-    text-align:center;
-}
-.hero h1{font-size:36px;margin-bottom:10px;}
-.hero p{font-size:18px;}
+        /* Services Section */
+        .services-strip { background: var(--primary-dark); color: white; padding: 60px 20px; }
+        .service-list { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 30px; max-width: 1200px; margin: auto; }
+        .service-item { flex: 1; min-width: 250px; text-align: center; }
+        .service-item h4 { font-size: 1.4rem; color: var(--accent-blue); margin-bottom: 10px; }
 
-/* CATEGORY SECTION */
-.categories{
-    padding:40px 8%;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    gap:20px;
-}
-.category{
-    background:white;
-    padding:20px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
-    transition:0.3s;
-    cursor:pointer;
-}
-.category:hover{
-    transform:translateY(-5px);
-}
+        /* Contact Section */
+        .contact-flex { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 50px; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 5px 25px rgba(0,0,0,0.05); }
+        
+        form { display: flex; flex-direction: column; }
+        input, textarea { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; outline: none; transition: 0.3s; }
+        input:focus, textarea:focus { border-color: var(--accent-blue); box-shadow: 0 0 5px rgba(0,168,255,0.2); }
+        .submit-btn { background: var(--primary-dark); color: white; border: none; padding: 15px; cursor: pointer; border-radius: 8px; font-weight: bold; font-size: 1.1rem; transition: 0.3s; }
+        .submit-btn:hover { background: #002a52; }
+        
+        .whatsapp-card { background: #e9f7ef; padding: 30px; border-radius: 15px; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        .whatsapp-btn { background: var(--whatsapp-green); color: white; padding: 15px 25px; text-decoration: none; border-radius: 8px; font-weight: bold; display: flex; align-items: center; gap: 10px; width: 100%; justify-content: center; margin-top: 20px; }
 
-/* PRODUCTS */
-.products-section{
-    padding:40px 8%;
-}
-.products-section h2{
-    margin-bottom:20px;
-    color:#2e7d32;
-}
-.products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-.product{
-    background:white;
-    padding:15px;
-    border-radius:15px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.1);
-    transition:0.3s;
-}
-.product:hover{
-    transform:translateY(-5px);
-}
-.product img{
-    width:100%;
-    height:150px;
-    object-fit:cover;
-    border-radius:10px;
-}
-.product h3{margin:10px 0 5px;}
-.product button{
-    background:#2e7d32;
-    color:white;
-    padding:8px 15px;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-    margin-top:8px;
-}
+        footer { text-align: center; padding: 30px; background: #000a14; color: #777; font-size: 0.9rem; }
 
-/* CART */
-.cart-box{
-    position:fixed;
-    right:20px;
-    top:90px;
-    width:320px;
-    background:white;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
-    display:none;
-    max-height:400px;
-    overflow:auto;
-}
-.cart-item{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:10px;
-}
-.total{
-    font-weight:bold;
-    margin-top:15px;
-}
-
-/* FOOTER */
-footer{
-    background:#1b5e20;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
-}
-</style>
+        @media (max-width: 768px) {
+            .contact-flex { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-    <div class="logo-container">
-        <img src="logo.png" alt="NM Shopsy Logo">
-    </div>
+    <header>
+        <nav>
+            <div class="logo">SECURE<span>VISION</span></div>
+            <ul>
+                <li><a href="#products">Cameras</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="search-box">
-        <input type="text" placeholder="Search products...">
-    </div>
+    <section class="hero">
+        <h1>Smart 4K Security Systems</h1>
+        <p>Expert installation and high-definition surveillance for your home or business. We protect what matters most.</p>
+        <a href="#contact" class="cta-btn">Get Free Consultation</a>
+    </section>
 
-    <div class="cart-btn" onclick="toggleCart()">
-        Cart (<span id="cart-count">0</span>)
-    </div>
-</header>
+    <section id="products" class="container">
+        <h2 class="section-title">Premium CCTV Hardware</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="dome.jpg" alt="Dome Camera">
+                <div class="card-content">
+                    <h3>4K Dome Cameras</h3>
+                    <p>Ideal for sleek indoor monitoring. Wide-angle coverage with vandal-proof housing.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="bullet.jpg" alt="Bullet Camera">
+                <div class="card-content">
+                    <h3>Pro Bullet Cameras</h3>
+                    <p>Heavy-duty outdoor protection with long-range night vision and weatherproofing.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="wireless.jpg" alt="Wireless Camera">
+                <div class="card-content">
+                    <h3>Wireless Smart IP</h3>
+                    <p>No messy wires. Real-time alerts and two-way audio directly to your smartphone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="hero">
-    <h1>Fresh Groceries Delivered Fast</h1>
-    <p>All your daily needs at one place</p>
-</section>
+    <section id="services" class="services-strip">
+        <div class="service-list">
+            <div class="service-item">
+                <h4>🛠️ Quick Install</h4>
+                <p>Same-day professional setup by our expert technical team.</p>
+            </div>
+            <div class="service-item">
+                <h4>🔄 AMC Services</h4>
+                <p>Annual Maintenance Contracts to keep your security 100% active.</p>
+            </div>
+            <div class="service-item">
+                <h4>📱 Mobile App</h4>
+                <p>Watch live camera feeds from anywhere in the world on iOS & Android.</p>
+            </div>
+        </div>
+    </section>
 
-<section class="categories">
-    <div class="category">🥫 Grocery</div>
-    <div class="category">🥛 Dairy</div>
-    <div class="category">🍪 Snacks</div>
-    <div class="category">🧴 Personal Care</div>
-    <div class="category">🧽 Household</div>
-</section>
+    <section id="contact" class="container">
+        <h2 class="section-title">Start Your Security Project</h2>
+        <div class="contact-flex">
+            
+            <div>
+                <h3>Email Inquiry</h3>
+                <p style="margin-bottom: 20px; color: #666;">Fill the form below to receive a quote via Gmail.</p>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Your Gmail Address" required>
+                    <textarea name="message" rows="5" placeholder="Tell us about your requirements (e.g., number of cameras, location)..." required></textarea>
+                    <button type="submit" class="submit-btn">Send Inquiry</button>
+                </form>
+            </div>
 
-<section class="products-section">
-<h2>Popular Products</h2>
-<div class="products">
+            <div class="whatsapp-card">
+                <h3 style="color: #128C7E;">Instant Support</h3>
+                <p>Connect directly with our sales manager for an immediate price estimate.</p>
+                <a href="https://wa.me/YOUR_NUMBER?text=Hi!%20I%20saw%20your%20website%20and%20need%20a%20quote%20for%20CCTV%20installation." class="whatsapp-btn" target="_blank">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.5 2 2 6.5 2 12.04C2 13.81 2.46 15.5 3.33 17L2.05 21.78L7.04 20.5C8.47 21.47 10.2 22 12.04 22C17.58 22 22.08 17.5 22.08 11.96C22.08 6.42 17.58 2 12.04 2M12.04 20.16C10.42 20.16 8.87 19.72 7.54 18.92L7.25 18.74L4.28 19.5L5.05 16.63L4.85 16.32C3.96 14.89 3.5 13.25 3.5 11.55C3.5 6.81 7.33 2.97 12.07 2.97C14.36 2.97 16.5 3.86 18.12 5.48C19.74 7.1 20.63 9.24 20.63 11.53C20.63 16.27 16.79 20.11 12.04 20.16M16.92 14.77C16.66 14.64 15.33 13.97 15.08 13.88C14.83 13.79 14.64 13.75 14.46 14.03C14.28 14.31 13.75 14.93 13.58 15.11C13.41 15.3 13.25 15.33 13 15.19C12.73 15.06 11.89 14.78 10.89 13.89C10.11 13.2 9.58 12.35 9.43 12.09C9.28 11.83 9.42 11.69 9.55 11.56C9.67 11.44 9.82 11.24 9.95 11.08C10.08 10.93 10.13 10.82 10.21 10.66C10.3 10.5 10.25 10.36 10.21 10.23C10.17 10.1 9.82 9.22 9.67 8.86C9.53 8.5 9.37 8.56 9.27 8.56C9.17 8.56 9.06 8.56 8.94 8.56C8.82 8.56 8.63 8.6 8.47 8.78C8.31 8.96 7.85 9.39 7.85 10.26C7.85 11.13 8.48 11.97 8.57 12.1C8.67 12.23 9.81 14 11.56 14.76C12 14.95 12.33 15.06 12.57 15.14C13.01 15.28 13.4 15.26 13.72 15.21C14.07 15.16 14.81 14.76 14.96 14.34C15.12 13.91 15.12 13.55 15.07 13.47C15.03 13.4 14.91 13.35 14.65 13.22Z"/></svg>
+                    Chat on WhatsApp
+                </a>
+            </div>
 
-<div class="product">
-<img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=600&q=60">
-<h3>Rice 5kg</h3>
-<p>₹350</p>
-<button onclick="addToCart('Rice 5kg',350)">Add to Cart</button>
-</div>
+        </div>
+    </section>
 
-<div class="product">
-<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=60">
-<h3>Milk 1L</h3>
-<p>₹55</p>
-<button onclick="addToCart('Milk 1L',55)">Add to Cart</button>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=60">
-<h3>Shampoo 500ml</h3>
-<p>₹180</p>
-<button onclick="addToCart('Shampoo 500ml',180)">Add to Cart</button>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=600&q=60">
-<h3>Detergent 1kg</h3>
-<p>₹75</p>
-<button onclick="addToCart('Detergent 1kg',75)">Add to Cart</button>
-</div>
-
-</div>
-</section>
-
-<div class="cart-box" id="cart-box">
-<h3>Your Cart</h3>
-<div id="cart-items"></div>
-<div class="total">Total: ₹<span id="total">0</span></div>
-</div>
-
-<footer>
-© 2026 NM Shopsy | Fresh Daily Needs Store
-</footer>
-
-<script>
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-function addToCart(name, price){
-    let existing = cart.find(item => item.name === name);
-    if(existing){ existing.quantity++; }
-    else{ cart.push({name, price, quantity:1}); }
-    updateCart();
-}
-
-function updateCart(){
-    document.getElementById("cart-count").innerText =
-        cart.reduce((sum,item)=>sum+item.quantity,0);
-
-    let cartItems = document.getElementById("cart-items");
-    cartItems.innerHTML = "";
-    let total = 0;
-
-    cart.forEach((item)=>{
-        total += item.price * item.quantity;
-        cartItems.innerHTML += `
-        <div class="cart-item">
-            <div>${item.name} x ${item.quantity}</div>
-            <div>₹${item.price * item.quantity}</div>
-        </div>`;
-    });
-
-    document.getElementById("total").innerText = total;
-    localStorage.setItem("cart", JSON.stringify(cart));
-}
-
-function toggleCart(){
-    let box = document.getElementById("cart-box");
-    box.style.display = box.style.display === "block" ? "none" : "block";
-}
-
-updateCart();
-</script>
+    <footer>
+        <p>&copy; 2026 SecureVision CCTV Experts. | Established Security Solutions</p>
+    </footer>
 
 </body>
 </html>
