@@ -1,175 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanha Enterprises | Korba's #1 CCTV & Security Experts</title>
-    <style>
-        /* Modern Reset & High-Contrast Theme */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, sans-serif; scroll-behavior: smooth; }
-        :root { 
-            --primary-dark: #0a192f; 
-            --accent-gold: #ffcc00; 
-            --accent-blue: #00a8ff; 
-            --whatsapp-green: #25D366; 
-            --white: #ffffff; 
-            --light-gray: #f4f7f6; 
-        }
-        body { background-color: var(--light-gray); color: #333; line-height: 1.6; overflow-x: hidden; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanha Enterprises | CCTV Sales & Installation in Chhattisgarh</title>
 
-        /* Navigation */
-        header { background: var(--primary-dark); color: white; padding: 1.2rem 5%; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-        nav { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.8rem; font-weight: 800; cursor: pointer; }
-        .logo span { color: var(--accent-gold); }
-        nav ul { display: flex; list-style: none; }
-        nav ul li { margin-left: 20px; }
-        nav ul li a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; font-size: 0.9rem; }
-        nav ul li a:hover { color: var(--accent-gold); }
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI, sans-serif}
+body{background:#fff;color:#0a192f;line-height:1.6}
 
-        /* Hero with Security Scan Animation */
-        .hero { 
-            height: 85vh; 
-            background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.85)), url('https://images.unsplash.com/photo-1557597774-9d2739f85a76?auto=format&fit=crop&w=1200'); 
-            background-size: cover; background-position: center; color: white; 
-            display: flex; flex-direction: column; justify-content: center; align-items: center; 
-            text-align: center; padding: 20px; position: relative; overflow: hidden; 
-        }
-        .hero::after { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: rgba(0, 168, 255, 0.5); box-shadow: 0 0 10px var(--accent-blue); animation: scan 4s linear infinite; z-index: 1; }
-        @keyframes scan { 0% { top: 0; } 100% { top: 100%; } }
-        
-        .hero h1, .hero p, .cta-group { animation: fadeInUp 1s ease-out forwards; }
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+/* Header */
+header{
+    background:#0a192f;
+    color:#fff;
+    padding:18px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+header h1{
+    font-size:1.5rem;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    opacity:0;
+    animation:headerFade 1s ease-out forwards;
+}
+header h1 span{
+    color:#ffcc00;
+    animation:spanPulse 2s infinite alternate;
+}
 
-        .cta-btn { background: var(--accent-gold); color: var(--primary-dark); padding: 16px 40px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; display: inline-block; cursor: pointer; }
-        .cta-btn.pulse { animation: pulse 2s infinite; }
-        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(255, 204, 0, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0); } }
+@keyframes headerFade{
+    from{opacity:0;transform:translateY(-10px)}
+    to{opacity:1;transform:translateY(0)}
+}
+@keyframes spanPulse{
+    from{color:#ffcc00}
+    to{color:#fff}
+}
 
-        /* Service Cards */
-        .container { max-width: 1200px; margin: auto; padding: 60px 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.4s; text-align: center; border-bottom: 4px solid transparent; }
-        .card:hover { transform: translateY(-10px); border-bottom: 4px solid var(--accent-gold); }
 
-        /* Service Areas Tag Cloud */
-        .coverage-container { background: white; border-radius: 15px; padding: 30px; margin-top: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .area-tags { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px; }
-        .tag { background: #e0e0e0; padding: 8px 18px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: var(--primary-dark); }
-        .tag.highlight { background: var(--accent-gold); }
+.hero {
+    background: linear-gradient(rgba(10,25,47,.6),rgba(10,25,47,.6)),
+                url('…');
+}.hero {
+    background: linear-gradient(rgba(10,25,47,.6),rgba(10,25,47,.6)),
+                url('…');
+}.hero {
+    background: linear-gradient(rgba(10,25,47,.85),rgba(10,25,47,.85)),
+                url('images/cctv‑camera‑large.jpg');
+    background-size: cover;
+    background-position: center;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:14px;
+}
+nav a:hover{color:#ffcc00}
 
-        /* Form */
-        .form-container { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); max-width: 600px; margin: auto; }
-        .gst-badge { display: inline-block; background: #e3f2fd; color: #1565c0; padding: 6px 15px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; margin-bottom: 20px; border: 1px solid #bbdefb; }
-        input, select, textarea { width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; outline: none; transition: 0.3s; }
-        .submit-btn { background: var(--primary-dark); color: white; border: none; padding: 18px; width: 100%; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1.1rem; width: 100%; }
+/* Hero */
+.hero{
+    height:85vh;
+    position:relative;
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+      url('https://images.unsplash.com/photo-1591696331112-6d4b96b9f461?auto=format&fit=crop&w=2400');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+.hero h2{font-size:42px;margin-bottom:15px;letter-spacing:1px;font-weight:700;text-shadow:2px 2px 6px rgba(0,0,0,0.5);}
+.btn{
+    background:#0a192f;
+    color:#fff;
+    padding:14px 30px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:6px;
+    display:inline-block;
+    animation:btnPulse 2s infinite;
+}
 
-        /* Floating Contact Buttons */
-        .sticky-contact { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 10px; z-index: 2000; }
-        .float-btn { color: white; padding: 14px 22px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; transition: 0.3s; font-size: 0.95rem; }
-        .whatsapp { background: var(--whatsapp-green); }
-        .call { background: var(--accent-blue); }
+/* keep existing hover colors untouched */
+.btn:hover{
+    /* no change, retains current styles if any */
+}
+@keyframes btnPulse{
+    0%,100%{transform:scale(1)}
+    50%{transform:scale(1.05)}
+}
 
-        footer { background: var(--primary-dark); color: #888; text-align: center; padding: 60px 20px; }
-        .gst-num { color: var(--accent-gold); font-weight: bold; }
+/* Sections */
+.section{padding:70px 5%}
+.section h3{text-align:center;margin-bottom:40px;font-size:30px;color:#0a192f}
 
-        @media (max-width: 768px) { .hero h1 { font-size: 2.2rem; } .sticky-contact { right: 15px; bottom: 15px; } }
-    </style>
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    color:#0a192f;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    text-align:center;
+    transition:background 0.3s, transform 0.3s;
+}
+.card:hover {
+    background:#ffcc00;
+    color:#0a192f;
+    transform:translateY(-5px);
+}
+.card h4{margin-bottom:15px;color:#0a192f}
+
+/* Districts */
+.districts{
+    background:#fff;
+    color:#0a192f;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    font-size:14px;
+    text-align:center;
+}
+
+/* Contact */
+.contact-form{
+    max-width:600px;
+    margin:auto;
+}
+input,textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:18px;
+    border:1px solid #ddd;
+    border-radius:6px;
+}
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#0a192f;
+    color:white;
+    font-weight:bold;
+    border-radius:6px;
+}
+
+/* Floating */
+.floating{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+}
+.float-btn{
+    display:block;
+    margin-top:10px;
+    padding:12px 18px;
+    border-radius:50px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+.whatsapp{background:#25D366}
+.call{background:#00a8ff}
+
+/* Footer */
+footer{
+    background:#0a192f;
+    color:#aaa;
+    text-align:center;
+    padding:40px;
+}
+
+/* section heading animation */
+.section h3{
+    opacity:0;
+    animation:fadeInUp 0.8s ease forwards;
+}
+.section:nth-of-type(2) h3{animation-delay:0.2s;}
+.section:nth-of-type(3) h3{animation-delay:0.4s;}
+.section:nth-of-type(4) h3{animation-delay:0.6s;}
+
+/* nav link animation */
+nav a{
+    position:relative;
+    animation:navFade 1s ease forwards;
+}
+nav a:nth-child(1){animation-delay:0.2s;}
+nav a:nth-child(2){animation-delay:0.4s;}
+nav a:nth-child(3){animation-delay:0.6s;}
+
+/* floating button bounce */
+.float-btn{
+    animation:floatBounce 2s infinite;
+}
+
+@keyframes navFade{
+    from{opacity:0;top:-10px}
+    to{opacity:1;top:0}
+}
+@keyframes floatBounce{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-5px)}
+}
+
+/* Modal */
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    z-index:1000;
+    justify-content:center;
+    align-items:center;
+}
+.modal.active{display:flex}
+.modal-content{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    max-width:800px;
+    max-height:80vh;
+    overflow-y:auto;
+    position:relative;
+    width:90%;
+}
+.close-btn{
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:28px;
+    cursor:pointer;
+    background:none;
+    border:none;
+    color:#333;
+}
+.close-btn:hover{color:#ffcc00}
+.camera-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+.camera-item{
+    padding:15px;
+    border:2px solid #eee;
+    border-radius:8px;
+    text-align:center;
+}
+.camera-item h5{color:#0a192f;margin-bottom:10px}
+.camera-item p{font-size:13px;color:#666;margin-bottom:8px}
+.camera-item .price{color:#ffcc00;font-weight:bold;font-size:16px}
+
+@media(max-width:768px){
+.hero h2{font-size:28px}
+.modal-content{width:95%;padding:20px}
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <div class="logo" onclick="window.scrollTo(0,0)">KANHA <span>ENTERPRISES</span></div>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#coverage">Service Areas</a></li>
-                <li><a href="#contact">Get Quote</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+<h1>Kanha <span>Enterprises</span></h1>
+<nav>
+<a href="#services">Services</a>
+<a href="#coverage">Coverage</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 
-    <section class="hero">
-        <h1>Don't Just Watch. <span>Protect.</span></h1>
-        <p>Serving Korba City & Nearby Districts with High-Tech Surveillance.</p>
-        <div class="cta-group">
-            <a href="#contact" class="cta-btn pulse">Book Free Site Audit</a>
-        </div>
-    </section>
+<section class="hero">
+<h2>Secure Your Home & Business with Smart CCTV Solutions</h2>
+<p>We provide CCTV Camera Sales, Installation and Maintenance Services across all districts of Chhattisgarh.</p>
+<a href="#contact" class="btn">Get Free Site Visit</a>
+</section>
 
-    <section id="coverage" class="container">
-        <div style="text-align: center;">
-            <h2 style="font-size: 2.5rem; color: var(--primary-dark);">Where We <span>Work</span></h2>
-            <p style="color: #666; max-width: 700px; margin: 15px auto;">We provide <strong>Instant Support</strong> within Korba and <strong>Scheduled Installations</strong> for outstation projects.</p>
-            
-            <div class="coverage-container">
-                <h3 style="color: var(--accent-blue); margin-bottom: 10px;">Korba Local Units</h3>
-                <div class="area-tags">
-                    <span class="tag highlight">TP Nagar</span>
-                    <span class="tag highlight">Balco</span>
-                    <span class="tag highlight">Gevra</span>
-                    <span class="tag highlight">Kusmunda</span>
-                    <span class="tag highlight">Dipka</span>
-                    <span class="tag highlight">Darri</span>
-                    <span class="tag highlight">Katghora</span>
-                    <span class="tag highlight">Champa Road</span>
-                </div>
-                
-                <h3 style="color: var(--primary-dark); margin-top: 30px; margin-bottom: 10px;">Extended Coverage</h3>
-                <p style="font-size: 0.9rem; color: #777;">Available for Bulk Industrial & Commercial Projects in:</p>
-                <div class="area-tags">
-                    <span class="tag">Janjgir-Champa</span>
-                    <span class="tag">Bilaspur</span>
-                    <span class="tag">Ambikapur</span>
-                    <span class="tag">Raigarh</span>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="services" class="section">
+<h3>Our Services</h3>
+<div class="grid">
+<div class="card" style="cursor:pointer" onclick="openCameraModal()">
+<h4>CCTV Camera Sales</h4>
+<p>We sell HD, Full HD, 4K, IP Cameras, Wireless Cameras and complete CCTV packages at affordable prices.</p>
+<p style="font-size:12px;color:#ffcc00;margin-top:10px">👉 Click to view camera details</p>
+</div>
+<div class="card">
+<h4>Installation Services</h4>
+<p>Professional CCTV installation for homes, offices, factories, shops and warehouses.</p>
+</div>
+<div class="card">
+<h4>Maintenance & AMC</h4>
+<p>Regular maintenance, troubleshooting, DVR repair and Annual Maintenance Contracts available.</p>
+</div>
+<div class="card">
+<h4>Industrial Projects</h4>
+<p>Large scale CCTV surveillance setup for industries, plants and commercial complexes.</p>
+</div>
+</div>
+</section>
 
-    <section id="contact" class="container">
-        <div class="form-container">
-            <div class="gst-badge">✓ GST REGISTERED FIRM</div>
-            <h3 style="margin-bottom: 25px;">Get Your Fast Estimate</h3>
-            
-            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Gmail (krishnashiva041@gmail.com)" required>
-                
-                <label style="font-size: 0.85rem; font-weight: bold; color: #555;">Select Your Location:</label>
-                <select name="location" required>
-                    <option value="" disabled selected>-- Choose Your Area --</option>
-                    <optgroup label="Korba Local">
-                        <option value="Korba City / TP Nagar">Korba City / TP Nagar</option>
-                        <option value="Balco Township">Balco Township</option>
-                        <option value="Gevra / Kusmunda / Dipka">Gevra / Kusmunda / Dipka</option>
-                        <option value="Darri / Katghora">Darri / Katghora</option>
-                    </optgroup>
-                    <optgroup label="Nearby Districts">
-                        <option value="Janjgir-Champa">Janjgir-Champa</option>
-                        <option value="Bilaspur Region">Bilaspur Region</option>
-                        <option value="Other Chhattisgarh Area">Other Chhattisgarh Area (Outside Korba)</option>
-                    </optgroup>
-                </select>
-                
-                <textarea name="message" rows="4" placeholder="Describe your needs (e.g. 8 Camera Setup for Warehouse)"></textarea>
-                <button type="submit" class="submit-btn">SEND REQUEST TO KANHA TEAM</button>
-            </form>
-        </div>
-    </section>
+<section id="coverage" class="section">
+<h3>We Serve All Districts of Chhattisgarh</h3>
+<div class="districts">
+Raipur, Bilaspur, Korba, Raigarh, Durg, Bhilai, Janjgir-Champa, Ambikapur, Jagdalpur, Rajnandgaon, Balod, Mahasamund, Kanker, Dantewada, Sukma, Kawardha, Surajpur, Bemetara, Gariaband and all nearby areas.
+</div>
+</section>
 
-    <div class="sticky-contact">
-        <a href="tel:+910000000000" class="float-btn call">📞 Call Now</a>
-        <a href="https://wa.me/910000000000?text=I%20am%20from%20outside%20Korba%20and%20need%20a%20CCTV%20quote" class="float-btn whatsapp">💬 WhatsApp</a>
-    </div>
+<section id="contact" class="section">
+<h3>Contact Us for CCTV Installation</h3>
+<div class="contact-form">
+<form id="contactForm">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="tel" id="contact" placeholder="Contact Number" required>
+<input type="tel" id="whatsapp" placeholder="WhatsApp Number" required>
+<textarea id="address" rows="2" placeholder="Your Complete Address (City, Area, Street)" required></textarea>
+<textarea id="requirement" rows="4" placeholder="Your Requirement (Home / Shop / Factory / No. of Cameras)" required></textarea>
+<button type="submit">Send Inquiry</button>
+</form>
+</div>
+</section>
 
-    <footer>
-        <p>© 2026 Kanha Enterprises | Registered Business in Korba, CG</p>
-        <div style="margin-top: 15px; font-size: 0.85rem;">
-            <p>GSTIN: <span class="gst-num">22AAAAA0000A1Z5</span></p>
-            <p>Email: krishnashiva041@gmail.com</p>
-            <p style="margin-top: 15px; opacity: 0.6;">Privacy Policy: We protect your data. Information submitted via this site is used solely for service provision and is never shared.</p>
-        </div>
-    </footer>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const contact = document.getElementById('contact').value;
+    const whatsapp = document.getElementById('whatsapp').value;
+    const address = document.getElementById('address').value;
+    const requirement = document.getElementById('requirement').value;
+    
+    const message = `Hi Kanha Enterprises,%0A%0AI'm interested in CCTV installation:%0A%0A*Name:* ${name}%0A*Contact Number:* ${contact}%0A*WhatsApp Number:* ${whatsapp}%0A*Address:* ${address}%0A*Requirement:* ${requirement}`;
+    
+    const whatsappLink = `https://wa.me/918269338232?text=${message}`;
+    window.open(whatsappLink, '_blank');
+    
+    // Reset form
+    document.getElementById('contactForm').reset();
+});
+</script>
+
+<div class="floating">
+<a href="tel:+918269338232" class="float-btn call">📞 Call Now</a>
+<a href="https://wa.me/918269338232" class="float-btn whatsapp">💬 WhatsApp</a>
+</div>
+
+<!-- Camera Modal -->
+<div id="cameraModal" class="modal">
+<div class="modal-content">
+<button class="close-btn" onclick="closeCameraModal()">&times;</button>
+<h3 style="text-align:center;margin-bottom:30px;color:#0a192f">CCTV Cameras & Packages</h3>
+<div class="camera-grid">
+<div class="camera-item">
+<h5>4MP Bullet Camera</h5>
+<p>HD Resolution | IP67 Weatherproof | Night Vision</p>
+<p class="price">₹2,500 - ₹3,500</p>
+</div>
+<div class="camera-item">
+<h5>2MP Dome Camera</h5>
+<p>1080p | Indoor/Outdoor | Wide Angle Lens</p>
+<p class="price">₹1,500 - ₹2,200</p>
+</div>
+<div class="camera-item">
+<h5>4K IP Camera</h5>
+<p>Ultra HD | POE Enabled | Smart Detection</p>
+<p class="price">₹4,500 - ₹6,000</p>
+</div>
+<div class="camera-item">
+<h5>Wireless Camera</h5>
+<p>WiFi Enabled | Easy Installation | App Control</p>
+<p class="price">₹2,000 - ₹3,000</p>
+</div>
+<div class="camera-item">
+<h5>C-Mount Camera</h5>
+<p>High Resolution | Professional Grade | Varifocal</p>
+<p class="price">₹3,500 - ₹5,000</p>
+</div>
+<div class="camera-item">
+<h5>Fisheye Camera</h5>
+<p>360° Coverage | Wide Area Monitoring | HD</p>
+<p class="price">₹3,000 - ₹4,500</p>
+</div>
+<div class="camera-item">
+<h5>PTZ Camera</h5>
+<p>Pan Tilt Zoom | 30x Zoom | Long Range</p>
+<p class="price">₹8,000 - ₹12,000</p>
+</div>
+<div class="camera-item">
+<h5>Night Vision Camera</h5>
+<p>Thermal Imaging | No Light Required | Long Range</p>
+<p class="price">₹5,000 - ₹8,000</p>
+</div>
+<div class="camera-item">
+<h5>Complete 4 Camera Package</h5>
+<p>4x 2MP Cameras | 1TB DVR | All Cables & Connectors</p>
+<p class="price">₹8,000 - ₹12,000</p>
+</div>
+<div class="camera-item">
+<h5>Complete 8 Camera Package</h5>
+<p>8x 4MP Cameras | 2TB DVR | Professional Installation</p>
+<p class="price">₹25,000 - ₹35,000</p>
+</div>
+</div>
+<p style="text-align:center;margin-top:30px;font-size:14px;color:#666">📞 For exact pricing and specifications, contact us!</p>
+</div>
+</div>
+
+<footer>
+© 2026 Kanha Enterprises | CCTV Sales & Installation in Chhattisgarh<br>
+Email: krishnashiva041@gmail.com
+</footer>
+
+<script>
+function openCameraModal() {
+    document.getElementById('cameraModal').classList.add('active');
+}
+
+function closeCameraModal() {
+    document.getElementById('cameraModal').classList.remove('active');
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById('cameraModal');
+    if (event.target === modal) {
+        closeCameraModal();
+    }
+}
+</script>
 
 </body>
 </html>
