@@ -1,449 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kanha Enterprises | CCTV Sales & Installation in Chhattisgarh</title>
+
+<title>CCTV Installation in Raipur, Bhilai, Durg & Bilaspur | Kanha Enterprises</title>
+
+<meta name="description" content="Kanha Enterprises provides professional CCTV installation, DVR setup, repair and AMC services in Raipur, Bhilai, Durg and Bilaspur. Call 9303477037 for free site survey.">
+
+<meta name="keywords" content="CCTV Installation Raipur, CCTV Installation Bhilai, CCTV Installation Durg, CCTV Installation Bilaspur, DVR Setup, CCTV Repair, AMC Service">
+
+<meta name="author" content="Kanha Enterprises">
+
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI, sans-serif}
-body{background:#fff;color:#0a192f;line-height:1.6}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
+body{background:#0a0f1c;color:white;overflow-x:hidden;}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;position:fixed;width:100%;background:rgba(0,0,0,0.7);z-index:999;}
+header h2{color:#00e0ff;}
+nav a{color:white;text-decoration:none;margin-left:20px;font-size:14px;}
+nav a:hover{color:#00e0ff;}
 
-/* Header */
-header{
-    background:#0a192f;
-    color:#fff;
-    padding:18px 5%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    position:sticky;
-    top:0;
-}
-header h1{
-    font-size:1.5rem;
-    font-weight:700;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    opacity:0;
-    animation:headerFade 1s ease-out forwards;
-}
-header h1 span{
-    color:#ffcc00;
-    animation:spanPulse 2s infinite alternate;
-}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;}
+.hero h1{font-size:36px;background:linear-gradient(90deg,#00e0ff,#00ffa3);-webkit-background-clip:text;color:transparent;}
+.hero-buttons{margin-top:30px;}
+.hero-buttons a{display:inline-block;padding:12px 25px;margin:10px;border-radius:30px;text-decoration:none;font-weight:600;}
+.btn-primary{background:#00e0ff;color:black;}
+.btn-secondary{border:2px solid #00e0ff;color:#00e0ff;}
+.btn-secondary:hover{background:#00e0ff;color:black;}
 
-@keyframes headerFade{
-    from{opacity:0;transform:translateY(-10px)}
-    to{opacity:1;transform:translateY(0)}
-}
-@keyframes spanPulse{
-    from{color:#ffcc00}
-    to{color:#fff}
-}
+.section{padding:100px 10%;text-align:center;}
+.section h2{margin-bottom:40px;color:#00e0ff;}
 
+.card-container{display:flex;flex-wrap:wrap;justify-content:center;gap:25px;}
+.card{background:rgba(255,255,255,0.05);padding:25px;width:280px;border-radius:15px;}
 
-.hero {
-    background: linear-gradient(rgba(10,25,47,.6),rgba(10,25,47,.6)),
-                url('…');
-}.hero {
-    background: linear-gradient(rgba(10,25,47,.6),rgba(10,25,47,.6)),
-                url('…');
-}.hero {
-    background: linear-gradient(rgba(10,25,47,.85),rgba(10,25,47,.85)),
-                url('images/cctv‑camera‑large.jpg');
-    background-size: cover;
-    background-position: center;
-}
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-    font-size:14px;
-}
-nav a:hover{color:#ffcc00}
+.brand-slider{display:flex;justify-content:center;flex-wrap:wrap;gap:40px;}
+.brand-slider img{height:45px;filter:grayscale(100%);opacity:.8;transition:.4s;}
+.brand-slider img:hover{filter:grayscale(0%);opacity:1;transform:scale(1.1);}
 
-/* Hero */
-.hero{
-    height:85vh;
-    position:relative;
-    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
-      url('https://images.unsplash.com/photo-1591696331112-6d4b96b9f461?auto=format&fit=crop&w=2400');
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-    color:#fff;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
-}
-.hero h2{font-size:42px;margin-bottom:15px;letter-spacing:1px;font-weight:700;text-shadow:2px 2px 6px rgba(0,0,0,0.5);}
-.btn{
-    background:#0a192f;
-    color:#fff;
-    padding:14px 30px;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:6px;
-    display:inline-block;
-    animation:btnPulse 2s infinite;
-}
+.price{margin-top:10px;color:#00ffa3;font-weight:600;}
 
-/* keep existing hover colors untouched */
-.btn:hover{
-    /* no change, retains current styles if any */
-}
-@keyframes btnPulse{
-    0%,100%{transform:scale(1)}
-    50%{transform:scale(1.05)}
-}
+form{max-width:600px;margin:auto;}
+form input, form textarea{width:100%;padding:12px;margin:10px 0;border:none;border-radius:8px;}
+form button{padding:12px 20px;border:none;border-radius:30px;background:#00e0ff;color:black;font-weight:600;cursor:pointer;}
 
-/* Sections */
-.section{padding:70px 5%}
-.section h3{text-align:center;margin-bottom:40px;font-size:30px;color:#0a192f}
+footer{background:black;padding:30px;text-align:center;font-size:14px;}
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:#fff;
-    color:#0a192f;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.05);
-    text-align:center;
-    transition:background 0.3s, transform 0.3s;
-}
-.card:hover {
-    background:#ffcc00;
-    color:#0a192f;
-    transform:translateY(-5px);
-}
-.card h4{margin-bottom:15px;color:#0a192f}
-
-/* Districts */
-.districts{
-    background:#fff;
-    color:#0a192f;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.05);
-    font-size:14px;
-    text-align:center;
-}
-
-/* Contact */
-.contact-form{
-    max-width:600px;
-    margin:auto;
-}
-input,textarea{
-    width:100%;
-    padding:14px;
-    margin-bottom:18px;
-    border:1px solid #ddd;
-    border-radius:6px;
-}
-button{
-    width:100%;
-    padding:15px;
-    border:none;
-    background:#0a192f;
-    color:white;
-    font-weight:bold;
-    border-radius:6px;
-}
-
-/* Floating */
-.floating{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-}
-.float-btn{
-    display:block;
-    margin-top:10px;
-    padding:12px 18px;
-    border-radius:50px;
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
-.whatsapp{background:#25D366}
-.call{background:#00a8ff}
-
-/* Footer */
-footer{
-    background:#0a192f;
-    color:#aaa;
-    text-align:center;
-    padding:40px;
-}
-
-/* section heading animation */
-.section h3{
-    opacity:0;
-    animation:fadeInUp 0.8s ease forwards;
-}
-.section:nth-of-type(2) h3{animation-delay:0.2s;}
-.section:nth-of-type(3) h3{animation-delay:0.4s;}
-.section:nth-of-type(4) h3{animation-delay:0.6s;}
-
-/* nav link animation */
-nav a{
-    position:relative;
-    animation:navFade 1s ease forwards;
-}
-nav a:nth-child(1){animation-delay:0.2s;}
-nav a:nth-child(2){animation-delay:0.4s;}
-nav a:nth-child(3){animation-delay:0.6s;}
-
-/* floating button bounce */
-.float-btn{
-    animation:floatBounce 2s infinite;
-}
-
-@keyframes navFade{
-    from{opacity:0;top:-10px}
-    to{opacity:1;top:0}
-}
-@keyframes floatBounce{
-    0%,100%{transform:translateY(0)}
-    50%{transform:translateY(-5px)}
-}
-
-/* Modal */
-.modal{
-    display:none;
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.6);
-    z-index:1000;
-    justify-content:center;
-    align-items:center;
-}
-.modal.active{display:flex}
-.modal-content{
-    background:white;
-    padding:30px;
-    border-radius:12px;
-    max-width:800px;
-    max-height:80vh;
-    overflow-y:auto;
-    position:relative;
-    width:90%;
-}
-.close-btn{
-    position:absolute;
-    top:15px;
-    right:20px;
-    font-size:28px;
-    cursor:pointer;
-    background:none;
-    border:none;
-    color:#333;
-}
-.close-btn:hover{color:#ffcc00}
-.camera-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
-}
-.camera-item{
-    padding:15px;
-    border:2px solid #eee;
-    border-radius:8px;
-    text-align:center;
-}
-.camera-item h5{color:#0a192f;margin-bottom:10px}
-.camera-item p{font-size:13px;color:#666;margin-bottom:8px}
-.camera-item .price{color:#ffcc00;font-weight:bold;font-size:16px}
+.whatsapp{position:fixed;bottom:25px;right:25px;background:#25D366;padding:15px 18px;border-radius:50%;color:white;text-decoration:none;font-size:20px;}
 
 @media(max-width:768px){
-.hero h2{font-size:28px}
-.modal-content{width:95%;padding:20px}
+header{flex-direction:column;}
+.hero h1{font-size:24px;}
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <header>
-<h1>Kanha <span>Enterprises</span></h1>
+<h2>Kanha Enterprises</h2>
 <nav>
 <a href="#services">Services</a>
-<a href="#coverage">Coverage</a>
+<a href="#products">Products</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
-<h2>Secure Your Home & Business with Smart CCTV Solutions</h2>
-<p>We provide CCTV Camera Sales, Installation and Maintenance Services across all districts of Chhattisgarh.</p>
-<a href="#contact" class="btn">Get Free Site Visit</a>
+<h1>Professional CCTV Installation in Raipur, Bhilai, Durg & Bilaspur</h1>
+<p>Residential | Commercial | Industrial Security Solutions</p>
+<div class="hero-buttons">
+<a href="#contact" class="btn-primary">Book Free Site Visit</a>
+<a href="https://wa.me/919303477037" target="_blank" class="btn-secondary">WhatsApp Now</a>
+</div>
+</section>
+
+<section class="section">
+<h2>Trusted Security Brands</h2>
+<div class="brand-slider">
+<img src="hikvision.png" alt="Hikvision">
+<img src="dahua.png" alt="Dahua">
+<img src="cpplus.png" alt="CP Plus">
+<img src="wd.png" alt="Western Digital">
+<img src="seagate.png" alt="Seagate">
+<img src="tplink.png" alt="TP-Link">
+<img src="dlink.png" alt="D-Link">
+</div>
 </section>
 
 <section id="services" class="section">
-<h3>Our Services</h3>
-<div class="grid">
-<div class="card" style="cursor:pointer" onclick="openCameraModal()">
-<h4>CCTV Camera Sales</h4>
-<p>We sell HD, Full HD, 4K, IP Cameras, Wireless Cameras and complete CCTV packages at affordable prices.</p>
-<p style="font-size:12px;color:#ffcc00;margin-top:10px">👉 Click to view camera details</p>
-</div>
-<div class="card">
-<h4>Installation Services</h4>
-<p>Professional CCTV installation for homes, offices, factories, shops and warehouses.</p>
-</div>
-<div class="card">
-<h4>Maintenance & AMC</h4>
-<p>Regular maintenance, troubleshooting, DVR repair and Annual Maintenance Contracts available.</p>
-</div>
-<div class="card">
-<h4>Industrial Projects</h4>
-<p>Large scale CCTV surveillance setup for industries, plants and commercial complexes.</p>
-</div>
+<h2>Our Services</h2>
+<div class="card-container">
+<div class="card"><h3>CCTV Installation</h3></div>
+<div class="card"><h3>DVR & NVR Setup</h3></div>
+<div class="card"><h3>CCTV Repair & AMC</h3></div>
 </div>
 </section>
 
-<section id="coverage" class="section">
-<h3>We Serve All Districts of Chhattisgarh</h3>
-<div class="districts">
-Raipur, Bilaspur, Korba, Raigarh, Durg, Bhilai, Janjgir-Champa, Ambikapur, Jagdalpur, Rajnandgaon, Balod, Mahasamund, Kanker, Dantewada, Sukma, Kawardha, Surajpur, Bemetara, Gariaband and all nearby areas.
+<section id="products" class="section">
+<h2>Products</h2>
+<div class="card-container">
+<div class="card"><h3>Dome / Bullet Camera</h3><p class="price">₹1,500 – ₹3,500</p></div>
+<div class="card"><h3>4/8 Channel DVR</h3><p class="price">₹2,000 – ₹8,000</p></div>
+<div class="card"><h3>1TB CCTV HDD</h3><p class="price">₹2,800 – ₹3,800</p></div>
+<div class="card"><h3>Cat6 Cable</h3><p class="price">₹15 – ₹25 per meter</p></div>
 </div>
 </section>
 
 <section id="contact" class="section">
-<h3>Contact Us for CCTV Installation</h3>
-<div class="contact-form">
-<form id="contactForm">
-<input type="text" id="name" placeholder="Your Name" required>
-<input type="tel" id="contact" placeholder="Contact Number" required>
-<input type="tel" id="whatsapp" placeholder="WhatsApp Number" required>
-<textarea id="address" rows="2" placeholder="Your Complete Address (City, Area, Street)" required></textarea>
-<textarea id="requirement" rows="4" placeholder="Your Requirement (Home / Shop / Factory / No. of Cameras)" required></textarea>
-<button type="submit">Send Inquiry</button>
+<h2>Book Free Site Visit</h2>
+
+<form action="https://formsubmit.co/krishnashiva041@gmail.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+<textarea name="message" placeholder="Installation Details"></textarea>
+<button type="submit">Submit Request</button>
 </form>
-</div>
+
+<br>
+
+<iframe 
+src="https://www.google.com/maps?q=Chhattisgarh&output=embed"
+width="100%" height="250" style="border:0;border-radius:12px;" loading="lazy">
+</iframe>
+
+<p style="margin-top:20px;">
+<a href="tel:+919303477037" style="color:#00ffa3;font-weight:600;">
+📞 Call Now: 9303477037
+</a>
+</p>
+
 </section>
 
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const contact = document.getElementById('contact').value;
-    const whatsapp = document.getElementById('whatsapp').value;
-    const address = document.getElementById('address').value;
-    const requirement = document.getElementById('requirement').value;
-    
-    const message = `Hi Kanha Enterprises,%0A%0AI'm interested in CCTV installation:%0A%0A*Name:* ${name}%0A*Contact Number:* ${contact}%0A*WhatsApp Number:* ${whatsapp}%0A*Address:* ${address}%0A*Requirement:* ${requirement}`;
-    
-    const whatsappLink = `https://wa.me/918269338232?text=${message}`;
-    window.open(whatsappLink, '_blank');
-    
-    // Reset form
-    document.getElementById('contactForm').reset();
-});
-</script>
-
-<div class="floating">
-<a href="tel:+918269338232" class="float-btn call">📞 Call Now</a>
-<a href="https://wa.me/918269338232" class="float-btn whatsapp">💬 WhatsApp</a>
-</div>
-
-<!-- Camera Modal -->
-<div id="cameraModal" class="modal">
-<div class="modal-content">
-<button class="close-btn" onclick="closeCameraModal()">&times;</button>
-<h3 style="text-align:center;margin-bottom:30px;color:#0a192f">CCTV Cameras & Packages</h3>
-<div class="camera-grid">
-<div class="camera-item">
-<h5>4MP Bullet Camera</h5>
-<p>HD Resolution | IP67 Weatherproof | Night Vision</p>
-<p class="price">₹2,500 - ₹3,500</p>
-</div>
-<div class="camera-item">
-<h5>2MP Dome Camera</h5>
-<p>1080p | Indoor/Outdoor | Wide Angle Lens</p>
-<p class="price">₹1,500 - ₹2,200</p>
-</div>
-<div class="camera-item">
-<h5>4K IP Camera</h5>
-<p>Ultra HD | POE Enabled | Smart Detection</p>
-<p class="price">₹4,500 - ₹6,000</p>
-</div>
-<div class="camera-item">
-<h5>Wireless Camera</h5>
-<p>WiFi Enabled | Easy Installation | App Control</p>
-<p class="price">₹2,000 - ₹3,000</p>
-</div>
-<div class="camera-item">
-<h5>C-Mount Camera</h5>
-<p>High Resolution | Professional Grade | Varifocal</p>
-<p class="price">₹3,500 - ₹5,000</p>
-</div>
-<div class="camera-item">
-<h5>Fisheye Camera</h5>
-<p>360° Coverage | Wide Area Monitoring | HD</p>
-<p class="price">₹3,000 - ₹4,500</p>
-</div>
-<div class="camera-item">
-<h5>PTZ Camera</h5>
-<p>Pan Tilt Zoom | 30x Zoom | Long Range</p>
-<p class="price">₹8,000 - ₹12,000</p>
-</div>
-<div class="camera-item">
-<h5>Night Vision Camera</h5>
-<p>Thermal Imaging | No Light Required | Long Range</p>
-<p class="price">₹5,000 - ₹8,000</p>
-</div>
-<div class="camera-item">
-<h5>Complete 4 Camera Package</h5>
-<p>4x 2MP Cameras | 1TB DVR | All Cables & Connectors</p>
-<p class="price">₹8,000 - ₹12,000</p>
-</div>
-<div class="camera-item">
-<h5>Complete 8 Camera Package</h5>
-<p>8x 4MP Cameras | 2TB DVR | Professional Installation</p>
-<p class="price">₹25,000 - ₹35,000</p>
-</div>
-</div>
-<p style="text-align:center;margin-top:30px;font-size:14px;color:#666">📞 For exact pricing and specifications, contact us!</p>
-</div>
-</div>
-
 <footer>
-© 2026 Kanha Enterprises | CCTV Sales & Installation in Chhattisgarh<br>
-Email: krishnashiva041@gmail.com
+© 2026 Kanha Enterprises | CCTV Installation Services in Chhattisgarh
 </footer>
 
-<script>
-function openCameraModal() {
-    document.getElementById('cameraModal').classList.add('active');
-}
-
-function closeCameraModal() {
-    document.getElementById('cameraModal').classList.remove('active');
-}
-
-// Close modal when clicking outside
-window.onclick = function(event) {
-    const modal = document.getElementById('cameraModal');
-    if (event.target === modal) {
-        closeCameraModal();
-    }
-}
-</script>
+<a class="whatsapp" href="https://wa.me/919303477037" target="_blank">💬</a>
 
 </body>
-</html>
+    </html>
